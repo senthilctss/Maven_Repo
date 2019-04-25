@@ -23,8 +23,8 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    #sourceFolder: '$(Build.SourcesDirectory)/'
-    SourceFolder: $(system.defaultWorkingDirectory)/Maven_Repo/Demo_Project/my-app/target/*.jar'
+    sourceFolder: '$(Build.SourcesDirectory)/*.jar'
+    #SourceFolder: $(system.defaultWorkingDirectory)/Maven_Repo/Demo_Project/my-app/target/*.jar'
     TargetFolder: '$(Build.ArtifactStagingDirectory)' 
     
 #- task: PublishBuildArtifacts@1
